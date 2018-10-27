@@ -1,0 +1,946 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\..\note\.DS_Store">
+      <Link>note\.DS_Store</Link>
+    </None>
+    <None Include="..\..\note\angular.md">
+      <Link>note\angular.md</Link>
+    </None>
+    <None Include="..\..\note\dotnet.md">
+      <Link>note\dotnet.md</Link>
+    </None>
+    <None Include="..\..\note\git.md">
+      <Link>note\git.md</Link>
+    </None>
+    <None Include="..\..\note\golang.md">
+      <Link>note\golang.md</Link>
+    </None>
+    <None Include="..\..\note\jest.md">
+      <Link>note\jest.md</Link>
+    </None>
+    <None Include="..\..\note\laravel.md">
+      <Link>note\laravel.md</Link>
+    </None>
+    <None Include="..\..\note\mac.md">
+      <Link>note\mac.md</Link>
+    </None>
+    <None Include="..\..\note\monitoring.md">
+      <Link>note\monitoring.md</Link>
+    </None>
+    <None Include="..\..\note\nodejs.md">
+      <Link>note\nodejs.md</Link>
+    </None>
+    <None Include="..\..\note\note.iml">
+      <Link>note\note.iml</Link>
+    </None>
+    <None Include="..\..\note\plugins.md">
+      <Link>note\plugins.md</Link>
+    </None>
+    <None Include="..\..\note\react.md">
+      <Link>note\react.md</Link>
+    </None>
+    <None Include="..\..\note\spring.md">
+      <Link>note\spring.md</Link>
+    </None>
+    <None Include="..\..\note\vscode.md">
+      <Link>note\vscode.md</Link>
+    </None>
+    <None Include="..\..\note\create\createTables.sql">
+      <Link>note\create\createTables.sql</Link>
+    </None>
+    <None Include="..\..\note\create\lht_schema.sql">
+      <Link>note\create\lht_schema.sql</Link>
+    </None>
+    <None Include="..\..\note\db\database.model.go">
+      <Link>note\db\database.model.go</Link>
+    </None>
+    <None Include="..\..\note\db\ht.arangodb.go">
+      <Link>note\db\ht.arangodb.go</Link>
+    </None>
+    <None Include="..\..\note\db\ht.testDB.go">
+      <Link>note\db\ht.testDB.go</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\Htquanly\Blog\Repo\RepoServiceProvider.php">
+      <Link>note\db\phpSystem\Htquanly\Blog\Repo\RepoServiceProvider.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\Htquanly\Blog\Repo\Article\ArticleInterface.php">
+      <Link>note\db\phpSystem\Htquanly\Blog\Repo\Article\ArticleInterface.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\Htquanly\Blog\Repo\Article\EloquentArticle.php">
+      <Link>note\db\phpSystem\Htquanly\Blog\Repo\Article\EloquentArticle.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\Htquanly\Blog\Repo\Tag\EloquentTag.php">
+      <Link>note\db\phpSystem\Htquanly\Blog\Repo\Tag\EloquentTag.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\Htquanly\Blog\Repo\Tag\TagInterface.php">
+      <Link>note\db\phpSystem\Htquanly\Blog\Repo\Tag\TagInterface.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\Htquanly\Blog\Repo\models\BankAccount.php">
+      <Link>note\db\phpSystem\Htquanly\Blog\Repo\models\BankAccount.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\Htquanly\Blog\Repo\models\Post.php">
+      <Link>note\db\phpSystem\Htquanly\Blog\Repo\models\Post.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\Htquanly\Blog\Service\FormServiceProvider.php">
+      <Link>note\db\phpSystem\Htquanly\Blog\Service\FormServiceProvider.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\Htquanly\Blog\Service\Cache\CacheInterface.php">
+      <Link>note\db\phpSystem\Htquanly\Blog\Service\Cache\CacheInterface.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\Htquanly\Blog\Service\Cache\LaravelCache.php">
+      <Link>note\db\phpSystem\Htquanly\Blog\Service\Cache\LaravelCache.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\Htquanly\Blog\Service\Form\Article\ArticleForm.php">
+      <Link>note\db\phpSystem\Htquanly\Blog\Service\Form\Article\ArticleForm.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\Htquanly\Blog\Service\Form\Article\ArticleFormLaravelValidator.php">
+      <Link>note\db\phpSystem\Htquanly\Blog\Service\Form\Article\ArticleFormLaravelValidator.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\Htquanly\Blog\controllers\ArticleController.php">
+      <Link>note\db\phpSystem\Htquanly\Blog\controllers\ArticleController.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\Htquanly\Blog\controllers\ContentController.php">
+      <Link>note\db\phpSystem\Htquanly\Blog\controllers\ContentController.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\Htquanly\Blog\models\Article.php">
+      <Link>note\db\phpSystem\Htquanly\Blog\models\Article.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\Htquanly\Blog\models\Tag.php">
+      <Link>note\db\phpSystem\Htquanly\Blog\models\Tag.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\Htquanly\GSD\Entities\ListInterface.php">
+      <Link>note\db\phpSystem\Htquanly\GSD\Entities\ListInterface.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\Htquanly\GSD\Entities\TaskCollectionInterface.php">
+      <Link>note\db\phpSystem\Htquanly\GSD\Entities\TaskCollectionInterface.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\Htquanly\GSD\Entities\TaskInterface.php">
+      <Link>note\db\phpSystem\Htquanly\GSD\Entities\TaskInterface.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\Htquanly\GSD\Entities\TodoList.php">
+      <Link>note\db\phpSystem\Htquanly\GSD\Entities\TodoList.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\Htquanly\GSD\Providers\TodoFacade.php">
+      <Link>note\db\phpSystem\Htquanly\GSD\Providers\TodoFacade.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\Htquanly\GSD\Providers\TodoManager.php">
+      <Link>note\db\phpSystem\Htquanly\GSD\Providers\TodoManager.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\Htquanly\GSD\Providers\TodoServiceProvider.php">
+      <Link>note\db\phpSystem\Htquanly\GSD\Providers\TodoServiceProvider.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\Htquanly\GSD\Repositories\TodoRepositoryInterface.php">
+      <Link>note\db\phpSystem\Htquanly\GSD\Repositories\TodoRepositoryInterface.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\Htquanly\IS\Controllers\Accounting\AccountingController.php">
+      <Link>note\db\phpSystem\Htquanly\IS\Controllers\Accounting\AccountingController.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\Htquanly\IS\Controllers\Accounting\ReceiptController.php">
+      <Link>note\db\phpSystem\Htquanly\IS\Controllers\Accounting\ReceiptController.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\Htquanly\IS\Controllers\Admin\AdminController.php">
+      <Link>note\db\phpSystem\Htquanly\IS\Controllers\Admin\AdminController.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\Htquanly\IS\Controllers\Admin\CompanyController.php">
+      <Link>note\db\phpSystem\Htquanly\IS\Controllers\Admin\CompanyController.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\Htquanly\IS\Controllers\Admin\ErrorController.php">
+      <Link>note\db\phpSystem\Htquanly\IS\Controllers\Admin\ErrorController.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\Htquanly\IS\Controllers\Admin\LoginController.php">
+      <Link>note\db\phpSystem\Htquanly\IS\Controllers\Admin\LoginController.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\Htquanly\IS\Controllers\Base\BaseController.php">
+      <Link>note\db\phpSystem\Htquanly\IS\Controllers\Base\BaseController.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\Htquanly\IS\Controllers\Base\HomeController.php">
+      <Link>note\db\phpSystem\Htquanly\IS\Controllers\Base\HomeController.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\Htquanly\IS\Controllers\Base\ModuleController.php">
+      <Link>note\db\phpSystem\Htquanly\IS\Controllers\Base\ModuleController.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\Htquanly\IS\Controllers\Base\ServiceManagementController.php">
+      <Link>note\db\phpSystem\Htquanly\IS\Controllers\Base\ServiceManagementController.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\Htquanly\IS\Controllers\Base\UsersController.php">
+      <Link>note\db\phpSystem\Htquanly\IS\Controllers\Base\UsersController.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\Htquanly\IS\Controllers\Base\Product\ProductTypeController.php">
+      <Link>note\db\phpSystem\Htquanly\IS\Controllers\Base\Product\ProductTypeController.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\Htquanly\IS\Controllers\CRM\CRMController.php">
+      <Link>note\db\phpSystem\Htquanly\IS\Controllers\CRM\CRMController.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\Htquanly\IS\Controllers\CRM\CustomerController.php">
+      <Link>note\db\phpSystem\Htquanly\IS\Controllers\CRM\CustomerController.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\Htquanly\IS\Controllers\HR\EmployeesController.php">
+      <Link>note\db\phpSystem\Htquanly\IS\Controllers\HR\EmployeesController.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\Htquanly\IS\Controllers\HR\FeedbackController.php">
+      <Link>note\db\phpSystem\Htquanly\IS\Controllers\HR\FeedbackController.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\Htquanly\IS\Controllers\HR\HRController.php">
+      <Link>note\db\phpSystem\Htquanly\IS\Controllers\HR\HRController.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\Htquanly\IS\Controllers\HR\RewardManagementController.php">
+      <Link>note\db\phpSystem\Htquanly\IS\Controllers\HR\RewardManagementController.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\Htquanly\IS\Controllers\SRM\SRMController.php">
+      <Link>note\db\phpSystem\Htquanly\IS\Controllers\SRM\SRMController.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\Htquanly\IS\Controllers\SRM\SupplierController.php">
+      <Link>note\db\phpSystem\Htquanly\IS\Controllers\SRM\SupplierController.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\Htquanly\IS\Controllers\Specialization\ClinicController.php">
+      <Link>note\db\phpSystem\Htquanly\IS\Controllers\Specialization\ClinicController.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\Htquanly\IS\Controllers\Warehouse\ProductController.php">
+      <Link>note\db\phpSystem\Htquanly\IS\Controllers\Warehouse\ProductController.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\Htquanly\IS\Controllers\Warehouse\WarehouseController.php">
+      <Link>note\db\phpSystem\Htquanly\IS\Controllers\Warehouse\WarehouseController.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\Htquanly\IS\Model\Accounting\Report.php">
+      <Link>note\db\phpSystem\Htquanly\IS\Model\Accounting\Report.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\Htquanly\IS\Model\Accounting\ReportInterface.php">
+      <Link>note\db\phpSystem\Htquanly\IS\Model\Accounting\ReportInterface.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\Htquanly\IS\Model\Admin\Company\CompanyEloquent.php">
+      <Link>note\db\phpSystem\Htquanly\IS\Model\Admin\Company\CompanyEloquent.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\Htquanly\IS\Model\Admin\Company\CompanyInterface.php">
+      <Link>note\db\phpSystem\Htquanly\IS\Model\Admin\Company\CompanyInterface.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\Htquanly\IS\Model\Admin\Company\ModuleEloquent.php">
+      <Link>note\db\phpSystem\Htquanly\IS\Model\Admin\Company\ModuleEloquent.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\Htquanly\IS\Model\Admin\Company\ModuleInterface.php">
+      <Link>note\db\phpSystem\Htquanly\IS\Model\Admin\Company\ModuleInterface.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\Htquanly\IS\Model\Admin\Database\DatabaseEloquent.php">
+      <Link>note\db\phpSystem\Htquanly\IS\Model\Admin\Database\DatabaseEloquent.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\Htquanly\IS\Model\Admin\Database\DatabaseInterface.php">
+      <Link>note\db\phpSystem\Htquanly\IS\Model\Admin\Database\DatabaseInterface.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\Htquanly\IS\Model\Admin\User\Authentication.php">
+      <Link>note\db\phpSystem\Htquanly\IS\Model\Admin\User\Authentication.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\Htquanly\IS\Model\Admin\User\AuthenticationInterface.php">
+      <Link>note\db\phpSystem\Htquanly\IS\Model\Admin\User\AuthenticationInterface.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\Htquanly\IS\Model\Admin\User\User.php">
+      <Link>note\db\phpSystem\Htquanly\IS\Model\Admin\User\User.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\Htquanly\IS\Model\Base\Base.php">
+      <Link>note\db\phpSystem\Htquanly\IS\Model\Base\Base.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\Htquanly\IS\Model\Base\BaseInterface.php">
+      <Link>note\db\phpSystem\Htquanly\IS\Model\Base\BaseInterface.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\Htquanly\IS\Model\Base\Item\Items.php">
+      <Link>note\db\phpSystem\Htquanly\IS\Model\Base\Item\Items.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\Htquanly\IS\Model\Base\Item\ItemsInterface.php">
+      <Link>note\db\phpSystem\Htquanly\IS\Model\Base\Item\ItemsInterface.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\Htquanly\IS\Model\Base\Product\Product.php">
+      <Link>note\db\phpSystem\Htquanly\IS\Model\Base\Product\Product.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\Htquanly\IS\Model\Base\Product\ProductInterface.php">
+      <Link>note\db\phpSystem\Htquanly\IS\Model\Base\Product\ProductInterface.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\Htquanly\IS\Model\Base\Product\ProductType.php">
+      <Link>note\db\phpSystem\Htquanly\IS\Model\Base\Product\ProductType.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\Htquanly\IS\Model\Base\Product\ProductTypeInterface.php">
+      <Link>note\db\phpSystem\Htquanly\IS\Model\Base\Product\ProductTypeInterface.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\Htquanly\IS\Model\Base\Receipt\ProductOrder.php">
+      <Link>note\db\phpSystem\Htquanly\IS\Model\Base\Receipt\ProductOrder.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\Htquanly\IS\Model\Base\Receipt\ProductOrderInterface.php">
+      <Link>note\db\phpSystem\Htquanly\IS\Model\Base\Receipt\ProductOrderInterface.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\Htquanly\IS\Model\Base\Receipt\Receipt.php">
+      <Link>note\db\phpSystem\Htquanly\IS\Model\Base\Receipt\Receipt.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\Htquanly\IS\Model\Base\Receipt\ReceiptInterface.php">
+      <Link>note\db\phpSystem\Htquanly\IS\Model\Base\Receipt\ReceiptInterface.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\Htquanly\IS\Model\Base\Service\OrderService.php">
+      <Link>note\db\phpSystem\Htquanly\IS\Model\Base\Service\OrderService.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\Htquanly\IS\Model\Base\Service\OrderServiceInterface.php">
+      <Link>note\db\phpSystem\Htquanly\IS\Model\Base\Service\OrderServiceInterface.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\Htquanly\IS\Model\Base\Service\Service.php">
+      <Link>note\db\phpSystem\Htquanly\IS\Model\Base\Service\Service.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\Htquanly\IS\Model\Base\Service\ServiceInterface.php">
+      <Link>note\db\phpSystem\Htquanly\IS\Model\Base\Service\ServiceInterface.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\Htquanly\IS\Model\CRM\Customer\Customer.php">
+      <Link>note\db\phpSystem\Htquanly\IS\Model\CRM\Customer\Customer.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\Htquanly\IS\Model\CRM\Customer\CustomerInterface.php">
+      <Link>note\db\phpSystem\Htquanly\IS\Model\CRM\Customer\CustomerInterface.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\Htquanly\IS\Model\CRM\Marketing\FairEloquent.php">
+      <Link>note\db\phpSystem\Htquanly\IS\Model\CRM\Marketing\FairEloquent.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\Htquanly\IS\Model\CRM\Marketing\FairInterface.php">
+      <Link>note\db\phpSystem\Htquanly\IS\Model\CRM\Marketing\FairInterface.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\Htquanly\IS\Model\HR\Employee\Employee.php">
+      <Link>note\db\phpSystem\Htquanly\IS\Model\HR\Employee\Employee.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\Htquanly\IS\Model\HR\Employee\EmployeeInterface.php">
+      <Link>note\db\phpSystem\Htquanly\IS\Model\HR\Employee\EmployeeInterface.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\Htquanly\IS\Model\HR\Resume\Resume.php">
+      <Link>note\db\phpSystem\Htquanly\IS\Model\HR\Resume\Resume.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\Htquanly\IS\Model\Remove\CustomerEloquent.php">
+      <Link>note\db\phpSystem\Htquanly\IS\Model\Remove\CustomerEloquent.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\Htquanly\IS\Model\SRM\Supplier\Supplier.php">
+      <Link>note\db\phpSystem\Htquanly\IS\Model\SRM\Supplier\Supplier.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\Htquanly\IS\Model\SRM\Supplier\SupplierInterface.php">
+      <Link>note\db\phpSystem\Htquanly\IS\Model\SRM\Supplier\SupplierInterface.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\Htquanly\IS\Model\Warehouse\Order\OrderProduct.php">
+      <Link>note\db\phpSystem\Htquanly\IS\Model\Warehouse\Order\OrderProduct.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\Htquanly\IS\Model\Warehouse\Order\OrderProductInterface.php">
+      <Link>note\db\phpSystem\Htquanly\IS\Model\Warehouse\Order\OrderProductInterface.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\Htquanly\IS\Service\Accounting\ReportServiceProvider.php">
+      <Link>note\db\phpSystem\Htquanly\IS\Service\Accounting\ReportServiceProvider.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\Htquanly\IS\Service\Admin\AdminFilter.php">
+      <Link>note\db\phpSystem\Htquanly\IS\Service\Admin\AdminFilter.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\Htquanly\IS\Service\Admin\AuthenticationProvider.php">
+      <Link>note\db\phpSystem\Htquanly\IS\Service\Admin\AuthenticationProvider.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\Htquanly\IS\Service\Admin\CompanyServiceProvider.php">
+      <Link>note\db\phpSystem\Htquanly\IS\Service\Admin\CompanyServiceProvider.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\Htquanly\IS\Service\Admin\ModuleServiceProvider.php">
+      <Link>note\db\phpSystem\Htquanly\IS\Service\Admin\ModuleServiceProvider.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\Htquanly\IS\Service\Base\BaseProvider.php">
+      <Link>note\db\phpSystem\Htquanly\IS\Service\Base\BaseProvider.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\Htquanly\IS\Service\Base\ItemsServiceProvider.php">
+      <Link>note\db\phpSystem\Htquanly\IS\Service\Base\ItemsServiceProvider.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\Htquanly\IS\Service\Base\Product\ProductTypeServiceProvider.php">
+      <Link>note\db\phpSystem\Htquanly\IS\Service\Base\Product\ProductTypeServiceProvider.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\Htquanly\IS\Service\Base\Receipt\ProductOrderServiceProvider.php">
+      <Link>note\db\phpSystem\Htquanly\IS\Service\Base\Receipt\ProductOrderServiceProvider.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\Htquanly\IS\Service\Base\Receipt\ReceiptServiceProvider.php">
+      <Link>note\db\phpSystem\Htquanly\IS\Service\Base\Receipt\ReceiptServiceProvider.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\Htquanly\IS\Service\Base\Service\OrderServiceProvider.php">
+      <Link>note\db\phpSystem\Htquanly\IS\Service\Base\Service\OrderServiceProvider.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\Htquanly\IS\Service\Base\Service\Service.php">
+      <Link>note\db\phpSystem\Htquanly\IS\Service\Base\Service\Service.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\Htquanly\IS\Service\CRM\CustomerServiceProvider.php">
+      <Link>note\db\phpSystem\Htquanly\IS\Service\CRM\CustomerServiceProvider.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\Htquanly\IS\Service\CRM\MarketingErrorProvider.php">
+      <Link>note\db\phpSystem\Htquanly\IS\Service\CRM\MarketingErrorProvider.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\Htquanly\IS\Service\CRM\MarketingProvider.php">
+      <Link>note\db\phpSystem\Htquanly\IS\Service\CRM\MarketingProvider.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\Htquanly\IS\Service\HR\EmployeeServiceProvider.php">
+      <Link>note\db\phpSystem\Htquanly\IS\Service\HR\EmployeeServiceProvider.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\Htquanly\IS\Service\SRM\SupplierServiceProvider.php">
+      <Link>note\db\phpSystem\Htquanly\IS\Service\SRM\SupplierServiceProvider.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\Htquanly\IS\Service\System\Exception\ExceptionServiceProvider.php">
+      <Link>note\db\phpSystem\Htquanly\IS\Service\System\Exception\ExceptionServiceProvider.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\Htquanly\IS\Service\System\Exception\HandlerInterface.php">
+      <Link>note\db\phpSystem\Htquanly\IS\Service\System\Exception\HandlerInterface.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\Htquanly\IS\Service\System\Exception\HtquanlyException.php">
+      <Link>note\db\phpSystem\Htquanly\IS\Service\System\Exception\HtquanlyException.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\Htquanly\IS\Service\System\Exception\NotifyHandler.php">
+      <Link>note\db\phpSystem\Htquanly\IS\Service\System\Exception\NotifyHandler.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\Htquanly\IS\Service\System\Filters\CacheFilter.php">
+      <Link>note\db\phpSystem\Htquanly\IS\Service\System\Filters\CacheFilter.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\Htquanly\IS\Service\System\Filters\UserFilter.php">
+      <Link>note\db\phpSystem\Htquanly\IS\Service\System\Filters\UserFilter.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\Htquanly\IS\Service\System\Handlers\LogHandlers.php">
+      <Link>note\db\phpSystem\Htquanly\IS\Service\System\Handlers\LogHandlers.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\Htquanly\IS\Service\System\Handlers\UserEventHandler.php">
+      <Link>note\db\phpSystem\Htquanly\IS\Service\System\Handlers\UserEventHandler.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\Htquanly\IS\Service\System\Notification\NotificationServiceProvider.php">
+      <Link>note\db\phpSystem\Htquanly\IS\Service\System\Notification\NotificationServiceProvider.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\Htquanly\IS\Service\System\Notification\NotifierInterface.php">
+      <Link>note\db\phpSystem\Htquanly\IS\Service\System\Notification\NotifierInterface.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\Htquanly\IS\Service\System\Notification\SmsNotifider.php">
+      <Link>note\db\phpSystem\Htquanly\IS\Service\System\Notification\SmsNotifider.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\Htquanly\IS\Service\Validators\AbstractLaravelValidator.php">
+      <Link>note\db\phpSystem\Htquanly\IS\Service\Validators\AbstractLaravelValidator.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\Htquanly\IS\Service\Validators\Admin\ModuleFormValidator.php">
+      <Link>note\db\phpSystem\Htquanly\IS\Service\Validators\Admin\ModuleFormValidator.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\Htquanly\IS\Service\Validators\Admin\UserFormValidator.php">
+      <Link>note\db\phpSystem\Htquanly\IS\Service\Validators\Admin\UserFormValidator.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\Htquanly\IS\Service\Validators\Base\ProductFormValidator.php">
+      <Link>note\db\phpSystem\Htquanly\IS\Service\Validators\Base\ProductFormValidator.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\Htquanly\IS\Service\Validators\Base\ServiceFormValidator.php">
+      <Link>note\db\phpSystem\Htquanly\IS\Service\Validators\Base\ServiceFormValidator.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\Htquanly\IS\Service\Validators\HR\EmployeeFormValidator.php">
+      <Link>note\db\phpSystem\Htquanly\IS\Service\Validators\HR\EmployeeFormValidator.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\Htquanly\IS\Service\Validators\Specialization\ClinicReceiptFormValidator.php">
+      <Link>note\db\phpSystem\Htquanly\IS\Service\Validators\Specialization\ClinicReceiptFormValidator.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\Htquanly\IS\Service\Validators\Stakeholders\CustomerFormValidator.php">
+      <Link>note\db\phpSystem\Htquanly\IS\Service\Validators\Stakeholders\CustomerFormValidator.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\Htquanly\IS\Service\Validators\Stakeholders\SupplierFormValidator.php">
+      <Link>note\db\phpSystem\Htquanly\IS\Service\Validators\Stakeholders\SupplierFormValidator.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\Htquanly\IS\Service\Validators\Warehouse\ProductTypeValidator.php">
+      <Link>note\db\phpSystem\Htquanly\IS\Service\Validators\Warehouse\ProductTypeValidator.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\Htquanly\IS\Service\Warehouse\OrderProductServiceProvider.php">
+      <Link>note\db\phpSystem\Htquanly\IS\Service\Warehouse\OrderProductServiceProvider.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\Htquanly\IS\Service\Warehouse\ProductServiceProvider.php">
+      <Link>note\db\phpSystem\Htquanly\IS\Service\Warehouse\ProductServiceProvider.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\views\.DS_Store">
+      <Link>note\db\phpSystem\views\.DS_Store</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\views\Admin\Home.blade.php">
+      <Link>note\db\phpSystem\views\Admin\Home.blade.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\views\Admin\Email\welcome.blade.php">
+      <Link>note\db\phpSystem\views\Admin\Email\welcome.blade.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\views\Admin\User\User-Validation.blade.php">
+      <Link>note\db\phpSystem\views\Admin\User\User-Validation.blade.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\views\Admin\User\Activation\Home.blade.php">
+      <Link>note\db\phpSystem\views\Admin\User\Activation\Home.blade.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\views\Admin\User\CRUD\List-All-Companys.blade.php">
+      <Link>note\db\phpSystem\views\Admin\User\CRUD\List-All-Companys.blade.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\views\Admin\User\CRUD\create.blade.php">
+      <Link>note\db\phpSystem\views\Admin\User\CRUD\create.blade.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\views\Admin\User\CRUD\edit.blade.php">
+      <Link>note\db\phpSystem\views\Admin\User\CRUD\edit.blade.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\views\Admin\User\CRUD\index.blade.php">
+      <Link>note\db\phpSystem\views\Admin\User\CRUD\index.blade.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\views\Admin\User\CRUD\show.blade.php">
+      <Link>note\db\phpSystem\views\Admin\User\CRUD\show.blade.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\views\Admin\User\Power-User\All-Users-Of-A-Company.blade.php">
+      <Link>note\db\phpSystem\views\Admin\User\Power-User\All-Users-Of-A-Company.blade.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\views\Admin\User\Power-User\Create.blade.php">
+      <Link>note\db\phpSystem\views\Admin\User\Power-User\Create.blade.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\views\Admin\User\Power-User\Edit.blade.php">
+      <Link>note\db\phpSystem\views\Admin\User\Power-User\Edit.blade.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\views\Admin\posts\create.blade.php">
+      <Link>note\db\phpSystem\views\Admin\posts\create.blade.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\views\Admin\posts\edit.blade.php">
+      <Link>note\db\phpSystem\views\Admin\posts\edit.blade.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\views\Admin\posts\index.blade.php">
+      <Link>note\db\phpSystem\views\Admin\posts\index.blade.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\views\Admin\posts\show.blade.php">
+      <Link>note\db\phpSystem\views\Admin\posts\show.blade.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\views\Admin\service\edit.blade.php">
+      <Link>note\db\phpSystem\views\Admin\service\edit.blade.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\views\Company\Assign-Module.blade.php">
+      <Link>note\db\phpSystem\views\Company\Assign-Module.blade.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\views\Company\Company-Info.blade.php">
+      <Link>note\db\phpSystem\views\Company\Company-Info.blade.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\views\Company\Create.blade.php">
+      <Link>note\db\phpSystem\views\Company\Create.blade.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\views\Company\Edit.blade.php">
+      <Link>note\db\phpSystem\views\Company\Edit.blade.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\views\Company\Home.blade.php">
+      <Link>note\db\phpSystem\views\Company\Home.blade.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\views\Company\login_page.blade.php">
+      <Link>note\db\phpSystem\views\Company\login_page.blade.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\views\Company\Module\create.blade.php">
+      <Link>note\db\phpSystem\views\Company\Module\create.blade.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\views\Company\Module\edit.blade.php">
+      <Link>note\db\phpSystem\views\Company\Module\edit.blade.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\views\Company\Module\list.blade.php">
+      <Link>note\db\phpSystem\views\Company\Module\list.blade.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\views\Errors\403.blade.php">
+      <Link>note\db\phpSystem\views\Errors\403.blade.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\views\Errors\404.blade.php">
+      <Link>note\db\phpSystem\views\Errors\404.blade.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\views\Errors\500.blade.php">
+      <Link>note\db\phpSystem\views\Errors\500.blade.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\views\Errors\default.blade.php">
+      <Link>note\db\phpSystem\views\Errors\default.blade.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\views\Errors\login_error.blade.php">
+      <Link>note\db\phpSystem\views\Errors\login_error.blade.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\views\Errors\User-Permission\Not-Allowed.blade.php">
+      <Link>note\db\phpSystem\views\Errors\User-Permission\Not-Allowed.blade.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\views\Home\Company-Master.blade.php">
+      <Link>note\db\phpSystem\views\Home\Company-Master.blade.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\views\Home\Login.blade.php">
+      <Link>note\db\phpSystem\views\Home\Login.blade.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\views\IS\Accounting\Employee-Service-Report.blade.php">
+      <Link>note\db\phpSystem\views\IS\Accounting\Employee-Service-Report.blade.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\views\IS\Accounting\Home.blade.php">
+      <Link>note\db\phpSystem\views\IS\Accounting\Home.blade.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\views\IS\Accounting\Order-Details.blade.php">
+      <Link>note\db\phpSystem\views\IS\Accounting\Order-Details.blade.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\views\IS\Accounting\Report-On-Specific-Date.blade.php">
+      <Link>note\db\phpSystem\views\IS\Accounting\Report-On-Specific-Date.blade.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\views\IS\Accounting\Detailed-Report\Employees-Product\All-Employees-Reports.blade.php">
+      <Link>note\db\phpSystem\views\IS\Accounting\Detailed-Report\Employees-Product\All-Employees-Reports.blade.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\views\IS\Accounting\Detailed-Report\Employees-Product\Employee-Reports.blade.php">
+      <Link>note\db\phpSystem\views\IS\Accounting\Detailed-Report\Employees-Product\Employee-Reports.blade.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\views\IS\Accounting\Detailed-Report\Employees-Product\Order-Items.blade.php">
+      <Link>note\db\phpSystem\views\IS\Accounting\Detailed-Report\Employees-Product\Order-Items.blade.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\views\IS\Accounting\Detailed-Report\Employees-Service\All-Employees-Reports.blade.php">
+      <Link>note\db\phpSystem\views\IS\Accounting\Detailed-Report\Employees-Service\All-Employees-Reports.blade.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\views\IS\Accounting\Detailed-Report\Employees-Service\Employee-Reports.blade.php">
+      <Link>note\db\phpSystem\views\IS\Accounting\Detailed-Report\Employees-Service\Employee-Reports.blade.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\views\IS\Accounting\General-Report\Discharge-Order-Model-Confirmation.blade.php">
+      <Link>note\db\phpSystem\views\IS\Accounting\General-Report\Discharge-Order-Model-Confirmation.blade.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\views\IS\Accounting\General-Report\Product-General-Report.blade.php">
+      <Link>note\db\phpSystem\views\IS\Accounting\General-Report\Product-General-Report.blade.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\views\IS\Accounting\General-Report\Product-Table.blade.php">
+      <Link>note\db\phpSystem\views\IS\Accounting\General-Report\Product-Table.blade.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\views\IS\Accounting\General-Report\Service-General-Report.blade.php">
+      <Link>note\db\phpSystem\views\IS\Accounting\General-Report\Service-General-Report.blade.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\views\IS\Accounting\General-Report\Service-Report-Pagination.blade.php">
+      <Link>note\db\phpSystem\views\IS\Accounting\General-Report\Service-Report-Pagination.blade.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\views\IS\Accounting\General-Report\Service-Table.blade.php">
+      <Link>note\db\phpSystem\views\IS\Accounting\General-Report\Service-Table.blade.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\views\IS\Accounting\Order-Details\Company-Info.blade.php">
+      <Link>note\db\phpSystem\views\IS\Accounting\Order-Details\Company-Info.blade.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\views\IS\Accounting\Order-Details\Product-Order-Details.blade.php">
+      <Link>note\db\phpSystem\views\IS\Accounting\Order-Details\Product-Order-Details.blade.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\views\IS\Accounting\Order-Details\Service-Order-Details.blade.php">
+      <Link>note\db\phpSystem\views\IS\Accounting\Order-Details\Service-Order-Details.blade.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\views\IS\Base\Notification\Update-Success.blade.php">
+      <Link>note\db\phpSystem\views\IS\Base\Notification\Update-Success.blade.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\views\IS\Base\Script\Chosen-Select.blade.php">
+      <Link>note\db\phpSystem\views\IS\Base\Script\Chosen-Select.blade.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\views\IS\Base\Service\All-Service-List.blade.php">
+      <Link>note\db\phpSystem\views\IS\Base\Service\All-Service-List.blade.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\views\IS\Base\Service\Create.blade.php">
+      <Link>note\db\phpSystem\views\IS\Base\Service\Create.blade.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\views\IS\Base\Service\Home.blade.php">
+      <Link>note\db\phpSystem\views\IS\Base\Service\Home.blade.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\views\IS\CRM\Home.blade.php">
+      <Link>note\db\phpSystem\views\IS\CRM\Home.blade.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\views\IS\CRM\Customer\Create.blade.php">
+      <Link>note\db\phpSystem\views\IS\CRM\Customer\Create.blade.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\views\IS\CRM\Customer\Edit.blade.php">
+      <Link>note\db\phpSystem\views\IS\CRM\Customer\Edit.blade.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\views\IS\CRM\Customer\List.blade.php">
+      <Link>note\db\phpSystem\views\IS\CRM\Customer\List.blade.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\views\IS\CRM\Customer\Show.blade.php">
+      <Link>note\db\phpSystem\views\IS\CRM\Customer\Show.blade.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\views\IS\CRM\Customer\index.blade.php">
+      <Link>note\db\phpSystem\views\IS\CRM\Customer\index.blade.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\views\IS\HR\index.blade.php">
+      <Link>note\db\phpSystem\views\IS\HR\index.blade.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\views\IS\HR\Employee-Module\Create.blade.php">
+      <Link>note\db\phpSystem\views\IS\HR\Employee-Module\Create.blade.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\views\IS\HR\Employee-Module\Edit.blade.php">
+      <Link>note\db\phpSystem\views\IS\HR\Employee-Module\Edit.blade.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\views\IS\HR\Employee-Module\Index.blade.php">
+      <Link>note\db\phpSystem\views\IS\HR\Employee-Module\Index.blade.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\views\IS\HR\Employee-Module\Show.blade.php">
+      <Link>note\db\phpSystem\views\IS\HR\Employee-Module\Show.blade.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\views\IS\HR\Employee-Module\User_setting.blade.php">
+      <Link>note\db\phpSystem\views\IS\HR\Employee-Module\User_setting.blade.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\views\IS\HR\Feedback-Module\index.blade.php">
+      <Link>note\db\phpSystem\views\IS\HR\Feedback-Module\index.blade.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\views\IS\HR\Reward-Module\index.blade.php">
+      <Link>note\db\phpSystem\views\IS\HR\Reward-Module\index.blade.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\views\IS\Marketing\Voucher\Create.blade.php">
+      <Link>note\db\phpSystem\views\IS\Marketing\Voucher\Create.blade.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\views\IS\SRM\Home.blade.php">
+      <Link>note\db\phpSystem\views\IS\SRM\Home.blade.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\views\IS\SRM\Supplier\CRUD\Create.blade.php">
+      <Link>note\db\phpSystem\views\IS\SRM\Supplier\CRUD\Create.blade.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\views\IS\SRM\Supplier\CRUD\Edit.blade.php">
+      <Link>note\db\phpSystem\views\IS\SRM\Supplier\CRUD\Edit.blade.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\views\IS\SRM\Supplier\CRUD\List.blade.php">
+      <Link>note\db\phpSystem\views\IS\SRM\Supplier\CRUD\List.blade.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\views\IS\SRM\Supplier\CRUD\Show.blade.php">
+      <Link>note\db\phpSystem\views\IS\SRM\Supplier\CRUD\Show.blade.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\views\IS\SRM\Supplier\CRUD\index.blade.php">
+      <Link>note\db\phpSystem\views\IS\SRM\Supplier\CRUD\index.blade.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\views\IS\Warehouse\Home.blade.php">
+      <Link>note\db\phpSystem\views\IS\Warehouse\Home.blade.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\views\IS\Warehouse\Order\Receipt-Form-Design.blade.php">
+      <Link>note\db\phpSystem\views\IS\Warehouse\Order\Receipt-Form-Design.blade.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\views\IS\Warehouse\Order\Receipt-View.blade.php">
+      <Link>note\db\phpSystem\views\IS\Warehouse\Order\Receipt-View.blade.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\views\IS\Warehouse\Order\[Removed]Receipt-View.blade.php">
+      <Link>note\db\phpSystem\views\IS\Warehouse\Order\[Removed]Receipt-View.blade.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\views\IS\Warehouse\Order\Export\Customer-Info.blade.php">
+      <Link>note\db\phpSystem\views\IS\Warehouse\Order\Export\Customer-Info.blade.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\views\IS\Warehouse\Order\Export\Layout.blade.php">
+      <Link>note\db\phpSystem\views\IS\Warehouse\Order\Export\Layout.blade.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\views\IS\Warehouse\Order\Export\Receipt-Header.blade.php">
+      <Link>note\db\phpSystem\views\IS\Warehouse\Order\Export\Receipt-Header.blade.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\views\IS\Warehouse\Order\Export\Receipt-Script.blade.php">
+      <Link>note\db\phpSystem\views\IS\Warehouse\Order\Export\Receipt-Script.blade.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\views\IS\Warehouse\Order\Export\Receipt.blade.php">
+      <Link>note\db\phpSystem\views\IS\Warehouse\Order\Export\Receipt.blade.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\views\IS\Warehouse\Order\Export\Selected-Products-Table.blade.php">
+      <Link>note\db\phpSystem\views\IS\Warehouse\Order\Export\Selected-Products-Table.blade.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\views\IS\Warehouse\Product\Script.blade.php">
+      <Link>note\db\phpSystem\views\IS\Warehouse\Product\Script.blade.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\views\IS\Warehouse\Product\CRUD\Create.blade.php">
+      <Link>note\db\phpSystem\views\IS\Warehouse\Product\CRUD\Create.blade.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\views\IS\Warehouse\Product\CRUD\Edit.blade.php">
+      <Link>note\db\phpSystem\views\IS\Warehouse\Product\CRUD\Edit.blade.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\views\IS\Warehouse\Product\CRUD\Get-Urls.blade.php">
+      <Link>note\db\phpSystem\views\IS\Warehouse\Product\CRUD\Get-Urls.blade.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\views\IS\Warehouse\Product\CRUD\Old-Edit.blade.php">
+      <Link>note\db\phpSystem\views\IS\Warehouse\Product\CRUD\Old-Edit.blade.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\views\IS\Warehouse\Product\CRUD\Show-Creating-Options.blade.php">
+      <Link>note\db\phpSystem\views\IS\Warehouse\Product\CRUD\Show-Creating-Options.blade.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\views\IS\Warehouse\Product\Existing\Import-Stock-Quantity.blade.php">
+      <Link>note\db\phpSystem\views\IS\Warehouse\Product\Existing\Import-Stock-Quantity.blade.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\views\IS\Warehouse\Product\List\General-List.blade.php">
+      <Link>note\db\phpSystem\views\IS\Warehouse\Product\List\General-List.blade.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\views\IS\Warehouse\Product\List\Pagination.blade.php">
+      <Link>note\db\phpSystem\views\IS\Warehouse\Product\List\Pagination.blade.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\views\IS\Warehouse\Product-Type\Create.blade.php">
+      <Link>note\db\phpSystem\views\IS\Warehouse\Product-Type\Create.blade.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\views\IS\Warehouse\Product-Type\Edit.blade.php">
+      <Link>note\db\phpSystem\views\IS\Warehouse\Product-Type\Edit.blade.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\views\IS\Warehouse\Product-Type\List.blade.php">
+      <Link>note\db\phpSystem\views\IS\Warehouse\Product-Type\List.blade.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\views\IS\Warehouse\Product-Type\Old-Edit.blade.php">
+      <Link>note\db\phpSystem\views\IS\Warehouse\Product-Type\Old-Edit.blade.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\views\IS\Warehouse\Product-Type\Script.blade.php">
+      <Link>note\db\phpSystem\views\IS\Warehouse\Product-Type\Script.blade.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\views\Info\Blog\Home.blade.php">
+      <Link>note\db\phpSystem\views\Info\Blog\Home.blade.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\views\Research\AngularJS.blade.php">
+      <Link>note\db\phpSystem\views\Research\AngularJS.blade.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\views\Research\Home.blade.php">
+      <Link>note\db\phpSystem\views\Research\Home.blade.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\views\Research\Layout.blade.php">
+      <Link>note\db\phpSystem\views\Research\Layout.blade.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\views\Specialization\Clinic\Printing-Receipt-Form.blade.php">
+      <Link>note\db\phpSystem\views\Specialization\Clinic\Printing-Receipt-Form.blade.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\views\Specialization\Clinic\Receipt-Create.blade.php">
+      <Link>note\db\phpSystem\views\Specialization\Clinic\Receipt-Create.blade.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\views\Specialization\Clinic\receipt_form.blade.php">
+      <Link>note\db\phpSystem\views\Specialization\Clinic\receipt_form.blade.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\views\layouts\master.blade.php">
+      <Link>note\db\phpSystem\views\layouts\master.blade.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\views\layouts\admin\master.blade.php">
+      <Link>note\db\phpSystem\views\layouts\admin\master.blade.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\views\layouts\admin\nav_bar.blade.php">
+      <Link>note\db\phpSystem\views\layouts\admin\nav_bar.blade.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\views\layouts\admin\side_bar.blade.php">
+      <Link>note\db\phpSystem\views\layouts\admin\side_bar.blade.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\views\layouts\company\login_page.blade.php">
+      <Link>note\db\phpSystem\views\layouts\company\login_page.blade.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\views\layouts\company\master.blade.php">
+      <Link>note\db\phpSystem\views\layouts\company\master.blade.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\views\layouts\company\nav_bar.blade.php">
+      <Link>note\db\phpSystem\views\layouts\company\nav_bar.blade.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\views\layouts\css\angularStyles.blade.php">
+      <Link>note\db\phpSystem\views\layouts\css\angularStyles.blade.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\views\layouts\css\kendoStyles.blade.php">
+      <Link>note\db\phpSystem\views\layouts\css\kendoStyles.blade.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\views\layouts\errors\master.blade.php">
+      <Link>note\db\phpSystem\views\layouts\errors\master.blade.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\views\layouts\form\master.blade.php">
+      <Link>note\db\phpSystem\views\layouts\form\master.blade.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\views\layouts\form\product_order.blade.php">
+      <Link>note\db\phpSystem\views\layouts\form\product_order.blade.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\views\layouts\js\angularScript.blade.php">
+      <Link>note\db\phpSystem\views\layouts\js\angularScript.blade.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\views\layouts\js\kendoScript.blade.php">
+      <Link>note\db\phpSystem\views\layouts\js\kendoScript.blade.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\views\layouts\login\master.blade.php">
+      <Link>note\db\phpSystem\views\layouts\login\master.blade.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\views\layouts\management\master.blade.php">
+      <Link>note\db\phpSystem\views\layouts\management\master.blade.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\views\layouts\master\footer.blade.php">
+      <Link>note\db\phpSystem\views\layouts\master\footer.blade.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\views\layouts\master\header.blade.php">
+      <Link>note\db\phpSystem\views\layouts\master\header.blade.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\views\layouts\master\nav_bar.blade.php">
+      <Link>note\db\phpSystem\views\layouts\master\nav_bar.blade.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\views\layouts\master\side_bar.blade.php">
+      <Link>note\db\phpSystem\views\layouts\master\side_bar.blade.php</Link>
+    </None>
+    <None Include="..\..\note\db\phpSystem\views\layouts\php\master_footer.blade.php">
+      <Link>note\db\phpSystem\views\layouts\php\master_footer.blade.php</Link>
+    </None>
+    <None Include="..\..\note\db\support\htquanly_ebeauty\htquanly_base.sql">
+      <Link>note\db\support\htquanly_ebeauty\htquanly_base.sql</Link>
+    </None>
+    <None Include="..\..\note\db\support\htquanly_ebeauty\reset_htquanly_ebeauty.sh">
+      <Link>note\db\support\htquanly_ebeauty\reset_htquanly_ebeauty.sh</Link>
+    </None>
+    <None Include="..\..\note\db\support\htquanly_ebeauty\run_sql_file.sh">
+      <Link>note\db\support\htquanly_ebeauty\run_sql_file.sh</Link>
+    </None>
+    <None Include="..\..\note\db\support\htquanly_ebeauty\schema_ebeauty_import.sh">
+      <Link>note\db\support\htquanly_ebeauty\schema_ebeauty_import.sh</Link>
+    </None>
+    <None Include="..\..\note\db\support\htquanly_ebeauty\query\employee.report.sql">
+      <Link>note\db\support\htquanly_ebeauty\query\employee.report.sql</Link>
+    </None>
+    <None Include="..\..\note\db\support\htquanly_ebeauty\query\htquanly_ebeauty_sv.sql">
+      <Link>note\db\support\htquanly_ebeauty\query\htquanly_ebeauty_sv.sql</Link>
+    </None>
+    <None Include="..\..\note\db\support\htquanly_ebeauty\query\order_export_query.sql">
+      <Link>note\db\support\htquanly_ebeauty\query\order_export_query.sql</Link>
+    </None>
+    <None Include="..\..\note\db\support\htquanly_ebeauty\query\order_product_query.sql">
+      <Link>note\db\support\htquanly_ebeauty\query\order_product_query.sql</Link>
+    </None>
+    <None Include="..\..\note\db\support\htquanly_ebeauty\query\orders.export.sql">
+      <Link>note\db\support\htquanly_ebeauty\query\orders.export.sql</Link>
+    </None>
+    <None Include="..\..\note\db\support\htquanly_ebeauty\query\orders.import.sql">
+      <Link>note\db\support\htquanly_ebeauty\query\orders.import.sql</Link>
+    </None>
+    <None Include="..\..\note\db\support\htquanly_ebeauty\query\product.report.sql">
+      <Link>note\db\support\htquanly_ebeauty\query\product.report.sql</Link>
+    </None>
+    <None Include="..\..\note\db\support\htquanly_ebeauty\query\report.cache.query.sql">
+      <Link>note\db\support\htquanly_ebeauty\query\report.cache.query.sql</Link>
+    </None>
+    <None Include="..\..\note\db\support\htquanly_ebeauty\query\test.sql">
+      <Link>note\db\support\htquanly_ebeauty\query\test.sql</Link>
+    </None>
+    <None Include="..\..\note\db\support\htquanly_ebeauty\schema\create_orders.history.sql">
+      <Link>note\db\support\htquanly_ebeauty\schema\create_orders.history.sql</Link>
+    </None>
+    <None Include="..\..\note\db\support\htquanly_ebeauty\schema\create_orders_history_table.sql">
+      <Link>note\db\support\htquanly_ebeauty\schema\create_orders_history_table.sql</Link>
+    </None>
+    <None Include="..\..\note\db\support\htquanly_ebeauty\schema\create_orders_import_table.sql">
+      <Link>note\db\support\htquanly_ebeauty\schema\create_orders_import_table.sql</Link>
+    </None>
+    <None Include="..\..\note\db\support\htquanly_ebeauty\schema\create_report_table_sql.sql">
+      <Link>note\db\support\htquanly_ebeauty\schema\create_report_table_sql.sql</Link>
+    </None>
+    <None Include="..\..\note\db\support\htquanly_ebeauty\schema\create_users_table.sql">
+      <Link>note\db\support\htquanly_ebeauty\schema\create_users_table.sql</Link>
+    </None>
+    <None Include="..\..\note\db\support\htquanly_ebeauty\schema\htquanly_ebeauty.sql">
+      <Link>note\db\support\htquanly_ebeauty\schema\htquanly_ebeauty.sql</Link>
+    </None>
+    <None Include="..\..\note\db\support\htquanly_ebeauty\schema\htquanly_ebeauty_backup.sql">
+      <Link>note\db\support\htquanly_ebeauty\schema\htquanly_ebeauty_backup.sql</Link>
+    </None>
+    <None Include="..\..\note\db\support\htquanly_ebeauty\schema\new_schema_updates.sql">
+      <Link>note\db\support\htquanly_ebeauty\schema\new_schema_updates.sql</Link>
+    </None>
+    <None Include="..\..\note\db\support\htquanly_ebeauty\schema\update_innodb_engine.sql">
+      <Link>note\db\support\htquanly_ebeauty\schema\update_innodb_engine.sql</Link>
+    </None>
+    <None Include="..\..\note\db\support\htquanly_ebeauty\schema\reset\reset_query.sql">
+      <Link>note\db\support\htquanly_ebeauty\schema\reset\reset_query.sql</Link>
+    </None>
+    <None Include="..\..\note\db\support\schema\base_db_import.sh">
+      <Link>note\db\support\schema\base_db_import.sh</Link>
+    </None>
+    <None Include="..\..\note\db\support\schema\db">
+      <Link>note\db\support\schema\db</Link>
+    </None>
+    <None Include="..\..\note\db\support\schema\import_shel_files.sh">
+      <Link>note\db\support\schema\import_shel_files.sh</Link>
+    </None>
+    <None Include="..\..\note\db\support\schema\init_lht.sh">
+      <Link>note\db\support\schema\init_lht.sh</Link>
+    </None>
+    <None Include="..\..\note\db\support\schema\scala_example.sh">
+      <Link>note\db\support\schema\scala_example.sh</Link>
+    </None>
+    <None Include="..\..\note\db\support\schema\schema_init.sql">
+      <Link>note\db\support\schema\schema_init.sql</Link>
+    </None>
+    <None Include="..\..\note\htquanly schema\base_db_import.sh">
+      <Link>note\htquanly schema\base_db_import.sh</Link>
+    </None>
+    <None Include="..\..\note\htquanly schema\import.sh">
+      <Link>note\htquanly schema\import.sh</Link>
+    </None>
+    <None Include="..\..\note\htquanly schema\scala_example.sh">
+      <Link>note\htquanly schema\scala_example.sh</Link>
+    </None>
+    <None Include="..\..\note\htquanly schema\schema_init.sql">
+      <Link>note\htquanly schema\schema_init.sql</Link>
+    </None>
+    <None Include="..\..\note\htquanly schema\thienphuong_db_import.sh">
+      <Link>note\htquanly schema\thienphuong_db_import.sh</Link>
+    </None>
+  </ItemGroup>
+</Project>
